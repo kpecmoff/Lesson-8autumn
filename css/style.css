@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Black.woff2") format("woff2"), url("../fonts/Lato-Black.woff") format("woff");
+    font-display: swap;
+    font-weight: 900;
+    font-style: normal;
+}
+html{
+    background: rgb(241,251,1);
+    background: radial-gradient(circle, rgba(241,251,1,1) 0%, rgba(115,136,255,1) 100%);
+}
+body {
+    font-family: "Lato";
+    line-height: 160%;
+    font-size: 16px;
+    color: #424551;
+}
+.header {
+}
+[class*="__container"]{
+    max-width: 1230px;
+    margin: 0px auto;
+}
+.main__container {
+}
+.about-course__list, .list {
+    margin-bottom: 200px;
+}
+.about-course {
+
+    max-width: 600px;
+    margin: 0 auto;
+}
+.about-course p {
+    margin-bottom: 48px;
+}
+.about-course__title {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom: 40px;
+}
+.about-course_subtitle{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+.about-course__list {
+}
+.list {
+}
+
+.list__items_text li::before {
+    content: "";
+    background: url('../img/icons/circle.svg') 0 0 no-repeat;
+    width: 16px;
+	height: 16px;
+	display: inline-block;
+    margin-right: 16px;
+	transition: all 0.8s ease 0s;
+}
+.list__items_text li:hover::before{
+    transform: scale(1.5)
+}
+
+.list__items li:not(:last-child) {
+    margin-bottom: 4px;
+}
+.list__item {
+}
+.main__card {
+}
+.card {
+}
+.card__info {
+    margin-bottom: 32px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.card__info_title {
+}
+.title {
+}
+.title__subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1E212C;
+    margin-bottom: 8px;
+}
+.title__caption {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    color: #1E212C;
+    margin-bottom: 16px;
+}
+.title__subtitle_grey {
+    font-size: 20px;
+    line-height: 150%;
+    color: #787A80;
+}
+.card__list {
+    margin-bottom: 32px;
+}
+.list__item_star::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url('../img/icons/Star.svg') 0 0 no-repeat;
+    display: inline-block;
+	margin-right: 10px;
+    transition: all 0.8s ease 0s;
+}
+.list__item_star:hover::before{
+    transform: scale(1.5);
+}
+.list__item_play::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url('../img/icons/Vector.svg') 0 0 no-repeat;
+    display: inline-block;
+	margin-right: 10px;
+    transition: all 0.8s ease 0s;
+}
+.list__item_play:hover::before{
+    transform: scale(1.5);
+}
+.list__item_user::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: url('../img/icons/user.svg') 0 0 no-repeat;
+    display: inline-block;
+	margin-right: 10px;
+    transition: all 0.8s ease 0s;
+}
+.list__item_user:hover::before{
+    transform: scale(1.5);
+}
+.card__info p {
+    margin-bottom: 40px;
+}
+.card__social {
+}
+.social-image {
+}
+.social-image__item {
+}
+.social-image__link:not(:last-child){
+    margin-right: 24px;
+}
+.social-image__link{
+    display: inline-block;
+}
+.social-image__fb{
+    background: url('../img/icons/fb.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.social-image__be{
+    background: url('../img/icons/behance.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.social-image__twitter{
+    background: url('../img/icons/Twitter.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.social-image__lnk{
+    background: url('../img/icons/ink.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+}
+.social-image__fb:hover{
+    background: url('../img/icons/Facebookred.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+	transition: all 0.8s ease 0s;
+    transform: scale(1.5);
+}
+.social-image__be:hover{
+    background: url('../img/icons/behancered.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+	transition: all 0.8s ease 0s;
+    transform: scale(1.5);
+}
+.social-image__twitter:hover{
+    background: url('../img/icons/Twitterred.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+	transition: all 0.8s ease 0s;
+    transform: scale(1.5);
+}
+.social-image__lnk:hover{
+    background: url('../img/icons/lnkred.svg') 0 0 no-repeat;
+    height: 24px;
+    width: 24px;
+	transition: all 0.8s ease 0s;
+    transform: scale(1.5);
+}
+.footer {
+}
